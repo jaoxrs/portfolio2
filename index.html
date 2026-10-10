@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Victor | Portfólio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="barra"></div>
+<div id="carro">🏎️</div>
+<div id="cursor"></div>
+<button id="tema" title="Modo claro/escuro">☀️</button>
+
+<aside id="lateral">
+  <button id="fechar">|||</button>
+  <a href="#habilidades">💡</a>
+  <a href="#sobre">👤</a>
+  <a href="#projetos">🛒</a>
+  <a href="https://github.com/SEU-USUARIO" target="_blank">📁</a>
+</aside>
+
+<header>
+  <button id="abrir"><span></span><span></span><span></span></button>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">O que eu faço?</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <img src="WhatsApp Image 2026-10-08 at 19.11.06.jpeg" alt="Foto do João" id="foto">
+</header>
+
+<section id="inicio" class="mesa">
+  <img src="ChatGPT Image 2 de set. de 2026, 16_02_31.png" alt="Mesa com computador">
+  <p id="msg1"></p>
+  <p id="msg2"></p>
+</section>
+
+<section id="sobre" class="aparecer">
+  <div class="caixa">
+    <h2>// Sobre mim</h2>
+    <p>Olá! Meu nome é João Victor, tenho 17 anos e sou de Belo Horizonte, MG. Sou uma pessoa curiosa e apaixonada por tecnologia, sempre buscando aprender novas ferramentas e transformar ideias em projetos.</p>
+    <p>Tenho conhecimentos em JavaScript, C#, C++, Python, MySQL e NoSQL, além de experiência com desenvolvimento e criação de sites e Web Design. Também trabalho com edição de fotos e vídeos.</p>
+    <p>Possuo conhecimentos em hardware, manutenção de computadores, sistemas operacionais e IoT. Também utilizo Inteligência Artificial como ferramenta para auxiliar no desenvolvimento e aprimoramento de projetos.</p>
+    <p>Meu objetivo é continuar evoluindo na área de tecnologia, desenvolvendo projetos que unam programação, criatividade e inovação.</p>
+  </div>
+</section>
+
+<section id="habilidades" class="aparecer">
+  <h2>// Habilidades</h2>
+  <div class="caixa brilho" id="lista-skills"></div>
+  <div class="caixa brilho soft">
+    <h3>Soft skills</h3>
+    <ul>
+      <li>Proatividade</li><li>Facilidade para aprender</li><li>Raciocínio lógico</li>
+      <li>Resolução de problemas</li><li>Organização</li><li>Criatividade</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projetos" class="aparecer">
+  <h2>// Projetos</h2>
+  <div class="cards">
+    <article class="card" data-titulo="Vorath" data-texto="E-commerce de relógios feito para treinar HTML, CSS e JavaScript, com catálogo de produtos e carrinho.">
+      <img src="ChatGPT Image 4 de set. de 2026, 21_15_15.png" alt="Projeto Vorath">
+      <button>Ver mais</button>
+    </article>
+    <article class="card" data-titulo="CPF Check" data-texto="Programa em C# que verifica se um CPF é válido de forma rápida e confiável.">
+      <img src="" alt="Projeto CPF Check">
+      <button>Ver mais</button>
+    </article>
+    <article class="card" data-titulo="Galpão Aeronaves" data-texto="Sistema em C# com banco de dados SQL Server para controlar aeronaves, manutenções, estoque e relatórios de um galpão.">
+      <img src="" alt="Projeto Galpão Aeronaves">
+      <button>Ver mais</button>
+    </article>
+  </div>
+  <a class="botao" href="https://github.com/SEU-USUARIO" target="_blank">Ver mais no GitHub</a>
+</section>
+
+<section id="contato" class="aparecer">
+  <h2>// Entre em contato</h2>
+  <p>Preencha o formulário para falar comigo por e-mail. Responderei assim que possível. Se preferir, use as redes sociais abaixo.</p>
+  <form id="formulario" class="caixa brilho">
+    <input type="text" id="nome" placeholder="Seu nome">
+    <input type="text" id="email" placeholder="Seu e-mail">
+    <input type="text" id="telefone" placeholder="Seu telefone">
+    <textarea id="mensagem" placeholder="Mensagem" maxlength="300" rows="6"></textarea>
+    <small id="contador">0/300</small>
+    <button type="submit">ENVIAR</button>
+  </form>
+</section>
+
+<footer>
+  <div class="redes">
+    <a href="https://instagram.com/" target="_blank"><img src="ChatGPT Image 4 de set. de 2026, 21_01_22.png" alt="Instagram"></a>
+    <a href="https://github.com/SEU-USUARIO" target="_blank"><img src="ChatGPT Image 4 de set. de 2026, 21_02_36.png" alt="GitHub"></a>
+    <a href="https://linkedin.com/" target="_blank"><img src="ChatGPT Image 4 de set. de 2026, 21_05_41.png" alt="LinkedIn"></a>
+  </div>
+  <div>
+    <p>📧 dev.joaovt@gmail.com</p>
+    <p>📱 (99) 9999-9999</p>
+    <p>📍 Belo Horizonte, MG</p>
+  </div>
+  <div>
+    <a href="#inicio">⬆ Voltar ao topo</a>
+    <p>© <span id="ano"></span> João Victor</p>
+  </div>
+</footer>
+
+<div id="modal">
+  <div class="caixa brilho">
+    <h3 id="modal-titulo"></h3>
+    <p id="modal-texto"></p>
+    <button id="modal-fechar">Fechar</button>
+  </div>
+</div>
+
+<script src="code.js"></script>
+</body>
+</html>
